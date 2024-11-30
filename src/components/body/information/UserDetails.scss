@@ -1,0 +1,81 @@
+.UserDetails-container {
+  width: 536px;
+  height: 247px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    max-width: 536px;
+    height: auto;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 15px;
+  }
+
+  .MuiTypography-root {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
+  }
+
+  .time {
+    font-size: 80px;
+
+    @media (max-width: 768px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 48px;
+    }
+  }
+
+  .date {
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
+
+    &.gregorian {
+      color: #ffffff;
+    }
+
+    &.hijri {
+      color: #ffffff99;
+      font-size: 22px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

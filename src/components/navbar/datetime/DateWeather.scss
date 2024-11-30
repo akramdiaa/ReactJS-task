@@ -1,0 +1,132 @@
+.datetime-container {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 16px 24px;
+  color: white;
+  direction: rtl;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: auto;
+  min-width: 260px;
+  max-width: 90%;
+  @media (max-width: 1024px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: auto;          
+    max-width: 400px;
+    margin: 0 auto;     
+    padding: 10px 16px; 
+    font-size: 14px;     
+  }
+
+  @media (max-width: 768px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: auto;          
+    max-width: 400px;
+    margin: 0 auto;     
+    padding: 10px 16px; 
+    font-size: 14px;     
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  
+    padding: 8px 12px;  
+    max-width: 300px;   
+  }
+
+  .weather-section,
+  .calendar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+
+    .weather-icon,
+    .calendar-icon {
+      color: white;
+      font-size: 14px;
+      
+      @media (max-width: 480px) {
+        font-size: 12px;
+      }
+    }
+
+    .weather-text,
+    .calendar-text {
+      font-size: 16px;
+      font-weight: 700;
+      
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      
+      @media (max-width: 480px) {
+        font-size: 13px;
+      }
+    }
+
+    .temperature,
+    .date {
+      font-size: 16px;
+      font-weight: 400;
+      
+      @media (max-width: 480px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .divider {
+    height: 60.31px;
+    border: 1px solid #fff;
+    margin: 0 24px;
+
+    @media (max-width: 480px) {
+      height: 1px;
+      width: 100%;
+      margin: 8px 0;
+    }
+  }
+
+  .calendar-section {
+    .dates-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .date {
+      font-size: 14px;
+      
+      @media (max-width: 480px) {
+        font-size: 12px;
+      }
+
+      &.gregorian {
+        color: #ffffff;
+      }
+      
+      &.hijri {
+        color: #ffffff99;
+        font-size: 13px;
+        
+        @media (max-width: 480px) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

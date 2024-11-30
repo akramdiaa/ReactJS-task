@@ -1,0 +1,17 @@
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  
+  .MuiToolbar-root {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    @media (max-width: 600px) {
+      padding: 0.5rem;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+  }
+}

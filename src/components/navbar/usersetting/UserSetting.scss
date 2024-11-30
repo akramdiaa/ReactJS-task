@@ -1,0 +1,115 @@
+.user-settings {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  @media (max-width: 1024px) {
+    gap: 1rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    gap: 1rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icons-group {
+    display: flex;
+    gap: 1rem;
+    
+    @media (max-width: 480px) {
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .MuiIconButton-root {
+      color: white;
+      background: rgba(255, 255, 255, 0.2);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+
+      @media (max-width: 480px) {
+        padding: 8px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 26px;
+    width: 166px;
+    height: 40px;
+
+    @media (max-width: 768px) {
+      width: auto;
+      min-width: 140px;
+      height: 36px;
+    }
+
+    .user-name-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 26px;
+      transition: background-color 0.2s;
+
+      @media (max-width: 768px) {
+        padding: 0.75rem;
+      }
+      
+      .user-name {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 12px;
+        }
+      }
+      
+      .arrow-icon {
+        color: white;
+        transition: transform 0.2s;
+        
+        &.open {
+          transform: rotate(180deg);
+        }
+
+        @media (max-width: 768px) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    
+    .user-avatar {
+      width: 32px;
+      height: 32px;
+      background-image: url('../../../assets/svg/usericon.svg');
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      @media (max-width: 768px) {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}

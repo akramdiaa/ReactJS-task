@@ -1,0 +1,14 @@
+@import "./variables";
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  
+  width: 100%;
+  font-family: $default-font-family;
+  transition: background-image 0.3s ease-in-out;
+
+}
