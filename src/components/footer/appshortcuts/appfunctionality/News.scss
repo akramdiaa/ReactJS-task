@@ -6,6 +6,11 @@
     max-height: 673.17px;
     max-width: 726.52px;
     border-radius: 10px;
+
+    @media (max-width: 480px) {
+      max-height: 90vh;
+      max-width: 95vw;
+    }
   }
 
   .close-button {
@@ -17,15 +22,27 @@
     padding: 24px;
     direction: rtl;
     overflow-x: hidden;
+
+    @media (max-width: 480px) {
+      padding: 16px;
+    }
   }
 
   .news-header {
     margin-bottom: 24px;
     text-align: right;
 
+    @media (max-width: 480px) {
+      margin-bottom: 16px;
+    }
+
     .news-title {
       font-weight: 600;
       color: #fff;
+
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -33,6 +50,10 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media (max-width: 480px) {
+      gap: 12px;
+    }
   }
 
   .news-card {
@@ -46,16 +67,30 @@
     border-radius: 0;
     cursor: pointer;
 
+    @media (max-width: 480px) {
+      height: 90px;
+      width: 95%;
+    }
+
     .MuiCardMedia-root {
       width: 188.22px;
       height: 100%;
       object-fit: cover;
       border-radius: 6px;
+
+      @media (max-width: 480px) {
+        width: 120px;
+      }
     }
 
     .MuiCardContent-root {
       flex: 1;
       text-align: right;
+      padding: 8px 16px;
+
+      @media (max-width: 480px) {
+        padding: 6px 12px;
+      }
     }
 
     .card-date {
@@ -63,6 +98,11 @@
       font-size: 12px;
       margin-bottom: 8px;
       font-weight: 400;
+
+      @media (max-width: 480px) {
+        font-size: 10px;
+        margin-bottom: 4px;
+      }
     }
 
     .card-title {
@@ -73,21 +113,38 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 1.3;
+        max-height: 36px;
+      }
     }
 
     .card-description {
       color: #a7a7a7;
       font-size: 14px;
       font-weight: 400;
+
+      @media (max-width: 480px) {
+        font-size: 12px;
+        line-height: 1.3;
+      }
     }
   }
+
   .banner-dots {
     margin-top: 16px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 8px;
-    z-index: 1;
+
+
+    @media (max-width: 480px) {
+      margin-top: 12px;
+      gap: 6px;
+    }
 
     .dot {
       width: 8px;
@@ -95,6 +152,11 @@
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.5);
       transition: background-color 0.3s;
+
+      @media (max-width: 480px) {
+        width: 6px;
+        height: 6px;
+      }
 
       &.active {
         background-color: white;
@@ -108,6 +170,10 @@
     width: 100%;
     overflow: hidden;
     height: 204px;
+
+    @media (max-width: 480px) {
+      height: 150px;
+    }
 
     .banner-slides {
       position: relative;
@@ -128,6 +194,11 @@
           width: 616px;
           height: 204px;
           object-fit: contain;
+
+          @media (max-width: 480px) {
+            width: 100%;
+            height: 150px;
+          }
         }
       }
     }
